@@ -1,0 +1,41 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.87);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.load {
+    display: flex;
+}
+.lod {
+  height: 40px;
+  width: 40px;
+  background-color: rgb(48, 48, 247);
+  margin: 3px;
+  border-radius: 50px;
+  animation: anima 0.7s ease-in infinite alternate;
+}
+.load .lod:nth-child(1) {
+    animation-delay: .4s;
+}
+.load .lod:nth-child(2) {
+    animation-delay: .6s;
+}
+.load .lod:nth-child(3) {
+    animation-delay: .8s;
+}
+@keyframes anima {
+    0% {
+        transform: translateY(0%);
+    }100% {
+        transform: translateY(100%);
+    }
+}
